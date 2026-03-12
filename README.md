@@ -51,14 +51,14 @@ These tools are available on most Linux distributions by default.
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/bash-backup-script.git
-cd bash-backup-script
+git clone https://github.com/subrat243/Back-it-up.git
+cd Back-it-up
 ```
 
 Make the script executable:
 
 ```bash
-chmod +x backup.sh
+chmod +x back-it-up.sh
 ```
 
 ---
@@ -70,13 +70,13 @@ chmod +x backup.sh
 Run the script with two arguments:
 
 ```bash
-./backup.sh <source_path> <destination_archive>
+./back-it-up.sh <source_path> <destination_archive>
 ```
 
 Example:
 
 ```bash
-./backup.sh /home/user/Documents docs_backup.tar.gz
+./back-it-up.sh /home/user/Documents docs_backup.tar.gz
 ```
 
 This creates a compressed archive containing the specified directory.
@@ -88,7 +88,7 @@ This creates a compressed archive containing the specified directory.
 If the script is run without arguments, it will prompt the user.
 
 ```bash
-./backup.sh
+./back-it-up.sh
 ```
 
 Example interaction:
@@ -109,13 +109,13 @@ documents_backup.tar.gz
 Backup a directory:
 
 ```bash
-./backup.sh /var/log logs_backup.tar.gz
+./back-it-up.sh /var/log logs_backup.tar.gz
 ```
 
 Backup a single file:
 
 ```bash
-./backup.sh config.conf config_backup.tar.gz
+./back-it-up.sh config.conf config_backup.tar.gz
 ```
 
 ---
@@ -145,7 +145,7 @@ This will run the backup every day at **2:00 AM**.
 ```
 bash-backup-script
 │
-├── backup.sh
+├── back-it-up.sh
 └── README.md
 ```
 
